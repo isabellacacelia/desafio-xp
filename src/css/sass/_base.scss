@@ -1,0 +1,22 @@
+@import 'variables';
+
+body {
+    background-color: $main-color-fundo;
+    font-family: $main-font;
+    color: $main-color-light;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 1.25rem;
+}
+
+main {
+    color: $main-color-light;
+}
+
+input {
+    border: none;
+    outline: none;
+}
