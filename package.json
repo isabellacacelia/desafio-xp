@@ -1,0 +1,32 @@
+{
+  "name": "desafio-xp",
+  "version": "1.0.0",
+  "description": "Teste para Vaga de Front End para empresa XP Inc",
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "^6.8.0",
+    "sass": "^1.25.0",
+    "webpack-cli": "^3.3.11",
+    "webpack": "^4.41.6"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isabellacacelia/desafio-xp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isabellacacelia/desafio-xp/issues"
+  },
+  "homepage": "https://github.com/isabellacacelia/desafio-xp#readme"
+}
