@@ -1,7 +1,4 @@
 header {
-    img {
-        width: 5%;
-    }
     input[type='text'] {
         width: 100%;
         color: #fff;
@@ -11,11 +8,17 @@ header {
         font-family: $main-font;
         font-weight: bold;
         font-size: 3rem;
+        @media (max-width: $screen-size-xs) {
+            font-size: 1.6rem;            
+        }
     }
     p {
         color: $main-color-light;
         font-size: 16px;
         padding-left: 0.6rem;
         margin: 0;
+        @media (max-width: $screen-size-xs) {
+            font-size: 12px;            
+        }
     }
 }

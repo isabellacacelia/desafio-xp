@@ -17,9 +17,14 @@ input {
   border: none;
   outline: none; }
 
+img {
+  width: 4%;
+  margin: 2% 2% auto; }
+  @media (max-width: 450px) {
+    img {
+      width: 13%; } }
+
 /* Variables */
-header img {
-  width: 5%; }
 header input[type='text'] {
   width: 100%;
   color: #fff;
@@ -29,22 +34,42 @@ header input[type='text'] {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 3rem; }
+  @media (max-width: 450px) {
+    header input[type='text'] {
+      font-size: 1.6rem; } }
 header p {
   color: #fafafa;
   font-size: 16px;
   padding-left: 0.6rem;
   margin: 0; }
+  @media (max-width: 450px) {
+    header p {
+      font-size: 12px; } }
 
 main .albuns-recentes p {
   margin-top: 6%;
   margin-bottom: 3%; }
+  @media (max-width: 450px) {
+    main .albuns-recentes p {
+      margin-top: 16%;
+      font-size: 12px;
+      text-align: center; } }
 main .albuns-recentes .albuns {
   display: inline-block;
   width: 15%;
-  margin: 0 2%;
+  margin: 0 2% auto;
   text-align: center; }
-  main .albuns-recentes .albuns:first-of-type {
-    margin-left: 0; }
+  @media (max-width: 450px) {
+    main .albuns-recentes .albuns {
+      width: 40%;
+      margin: 3%; } }
+  @media (min-width: 450px) and (max-width: 768px) {
+    main .albuns-recentes .albuns {
+      width: 26%;
+      margin: 3%; } }
+  @media (min-width: 992px) {
+    main .albuns-recentes .albuns:first-of-type {
+      margin-left: 0; } }
   main .albuns-recentes .albuns img {
     width: 100%; }
   main .albuns-recentes .albuns p {
@@ -54,5 +79,8 @@ main .albuns-recentes .albuns {
     margin-bottom: 0; }
     main .albuns-recentes .albuns p:first-of-type {
       color: #fafafa; }
+    @media (max-width: 450px) {
+      main .albuns-recentes .albuns p {
+        font-size: 12px; } }
 
 /*# sourceMappingURL=style.css.map */

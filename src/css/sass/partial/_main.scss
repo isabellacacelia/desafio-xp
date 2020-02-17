@@ -3,15 +3,30 @@ main {
         p {
             margin-top: 6%;
             margin-bottom: 3%;
+            @media (max-width: $screen-size-xs) {
+                margin-top: 16%;
+                font-size: 12px;
+                text-align: center
+            }
         }
         .albuns {
-            &:first-of-type {
-                margin-left: 0
-            }
             display: inline-block;
             width: 15%;
-            margin: 0 2%;
+            margin: 0 2% auto;
             text-align: center;
+            @media (max-width: $screen-size-xs) {
+                width: 40%;
+                margin: 3%;           
+            }
+            @media (min-width: $screen-size-xs) and (max-width: $screen-size-sm) {
+                width: 26%;
+                margin: 3%;      
+            }
+            @media(min-width: $screen-size-md) {
+                &:first-of-type {
+                    margin-left: 0
+                }
+            }
             img {
                 width: 100%
             }
@@ -22,7 +37,10 @@ main {
                 font-size: 14px;
                 color: $main-color-dark;
                 margin-top: 2%;
-                margin-bottom: 0
+                margin-bottom: 0;  
+                @media (max-width: $screen-size-xs) {
+                    font-size: 12px;                             
+                }
             }
         }
     }

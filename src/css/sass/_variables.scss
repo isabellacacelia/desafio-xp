@@ -1,7 +1,12 @@
 /* Variables */
 
-$main-color-fundo:  #161616;
+$main-color-bg:  #161616;
 $main-color-light:  #fafafa;
 $main-color-dark:   #999;
 
-$main-font: 'Roboto', sans-serif
+$main-font: 'Roboto', sans-serif;
+
+$screen-size-xs: 450px;
+$screen-size-sm: 768px;
+$screen-size-md: 992px;
+$screen-size-lg: 1200px;

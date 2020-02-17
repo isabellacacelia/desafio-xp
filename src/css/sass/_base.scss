@@ -1,7 +1,7 @@
 @import 'variables';
 
 body {
-    background-color: $main-color-fundo;
+    background-color: $main-color-bg;
     font-family: $main-font;
     color: $main-color-light;
 }
@@ -19,4 +19,12 @@ main {
 input {
     border: none;
     outline: none;
+}
+
+img {
+    width: 4%;
+    margin: 2% 2% auto;
+    @media (max-width: $screen-size-xs) {
+        width: 13%;          
+    }
 }
