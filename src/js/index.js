@@ -1,6 +1,6 @@
 import $ from 'jquery';
 
-getHashParams = () => {
+const getHashParams = () => {
     var hashParams = {};
     var e, r = /([^&;=]+)=?([^&;]*)/g,
         q = window.location.hash.substring(1);
@@ -10,18 +10,23 @@ getHashParams = () => {
     return hashParams;
 }
 
-getTokenAccess = () => {
+const topTracksLorde = () => {
     const parametros = getHashParams();
     const token = parametros.access_token;
-}
+    const url = `https://api.spotify.com/v1/`
 
-topTracksLorde = () => {
     $.ajax({
-        method: "GET",
-        dataType: "Json",
-        url: "https://api.spotify.com/v1/artists/163tK9Wjr9P9DmM0AVK7lm/top-tracks?country=BR",
+        method: 'GET',
+        dataType: 'Json',
+        url: `https://api.spotify.com/v1/albums/0sNOF9WDwhWunNAHPD3Baj`,
         headers: {
             Authorization: `Bearer ${token}`
         }
     })
+
+    fetch(url, { method: 'GET' })
+        .then(response => response.json())
+        .then(json => { console.log(json) })
+
 }
+topTracksLorde()

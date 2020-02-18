@@ -9,6 +9,6 @@ module.exports = {
     },
     devServer: {
         contentBase: './',
-        port: 8085
+        port: 8087
     }
 }
